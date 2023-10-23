@@ -1,9 +1,4 @@
 /__pycache__
-# /db/*
 /coba coba
-# /bin/known_face_encodings.pkl
-# /images/*
-# /new_images/*
-# /logs/*
 .env
 crontab.txt
