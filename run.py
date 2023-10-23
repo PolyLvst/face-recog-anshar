@@ -72,7 +72,7 @@ def run_main():
     current_stu = ''
     mode_nama = 'Belum terdaftar'
     timing_icon = {'Windows':[4,6,60],'Linux':[0,10,100],'Darwin':[4,6,60],'Java':[4,6,60]}
-    if HOST != 'Windows' or HOST != 'Linux':
+    if HOST != 'Windows' and HOST != 'Linux':
         print('This os maybe have a different timing ...')
         logger.Log_write('Timing may have differ','warning')
     # Jika False maka memakai mode popup info.png jika True memakai marked.png

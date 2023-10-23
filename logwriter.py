@@ -8,6 +8,7 @@ class write_some_log():
         self.max_log_age = 3 # Day
         self.log_path = path
         self.whois_running = which_running
+        self._check_folders()
         self._check_old_logs()
 
     def Log_write(self,text,stat='info'):
@@ -38,6 +39,23 @@ class write_some_log():
                 # File is older than 3 days, so delete it
                 os.remove(file_path)
                 print(f"{file_path} has been deleted as it's more than 3 days old.")
+
+    def _check_folders(self):
+        bin_dir ='./bin'
+        db_dir ='./db'
+        images_dir ='./images'
+        logs_dir ='./logs'
+        new_images_dir = './new_images'
+        if not os.path.exists(bin_dir):
+            os.mkdir(bin_dir)
+        if not os.path.exists(db_dir):
+            os.mkdir(db_dir)
+        if not os.path.exists(images_dir):
+            os.mkdir(images_dir)
+        if not os.path.exists(logs_dir):
+            os.mkdir(logs_dir)
+        if not os.path.exists(images_dir):
+            os.mkdir(new_images_dir)
 
 if __name__ == '__main__':
     logger = write_some_log('./logs/test.log','logwriter.py')

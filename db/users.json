@@ -1,0 +1,134 @@
+[
+    {
+       "type": "header",
+       "version": "5.2.1",
+       "comment": "Export to JSON plugin for PHPMyAdmin"
+    },
+    {
+       "type": "database",
+       "name": "main"
+    },
+    {
+       "type": "table",
+       "name": "users",
+       "database": "main",
+       "status_pass":"REDACTED",
+       "data": [
+          {
+             "name": "1",
+             "full_name": "Hudman H.A.",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "4",
+             "full_name": "Lanifa Afrin Sakhi",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "5",
+             "full_name": "Muhammad Akbar Al Khawarizmi Amin",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "6",
+             "full_name": "Akifah Nur Shakila Najma",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "7",
+             "full_name": "Calfino Diego Bagus",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "8",
+             "full_name": "Alya Almahyra Abrori",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "9",
+             "full_name": "Amaliatur Rosida",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "10",
+             "full_name": "Bumi Arthur Kalandra Rahman",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "11",
+             "full_name": "Assyfa Shirly Alnaira",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "12",
+             "full_name": "Athallah Shaquile Priansyah",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "13",
+             "full_name": "Muhammad Albiansyah Pratama",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "14",
+             "full_name": "Diffo Rizki Pasha",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "15",
+             "full_name": "Earlyta Arsyfa Salsabila",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "16",
+             "full_name": "Fairuz Zahira Fauza",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "17",
+             "full_name": "Muhammad Haidar Ali Mujahidin",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "18",
+             "full_name": "Kirana Detia Ayunda",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "19",
+             "full_name": "Khayla Inaraja Linarta",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "20",
+             "full_name": "Nabila Hasna Amira",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "21",
+             "full_name": "Ai Rama Dhamar Rachman",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "22",
+             "full_name": "Starla Azalea Gek Sico",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "23",
+             "full_name": "Syafia Almaira Qisya",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "24",
+             "full_name": "Fayolla Kayyisah Mukhbita Firmansyah",
+             "password": "**REDACTED**"
+          },
+          {
+             "name": "25",
+             "full_name": "Maliq Javier Dzakir Mimbraz",
+             "password": "**REDACTED**"
+          }
+       ]
+    }
+ ]

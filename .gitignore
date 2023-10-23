@@ -1,4 +1,9 @@
 /__pycache__
 /coba coba
+# /db
+/bin
+/images
+/new_images
+/logs
 .env
 crontab.txt
