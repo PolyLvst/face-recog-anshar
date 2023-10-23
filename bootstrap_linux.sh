@@ -66,11 +66,11 @@ else
 fi
 crontab_main="$script_directory/crontab.txt"
 echo "Buka terminal lalu ketik crontab -e"> $crontab_main
-echo "Copy & Paste :"> $crontab_main
+echo "Copy & Paste :">> $crontab_main
 # Change the path for run.py
-echo "@reboot sleep 30;cd $script_directory;XDG_RUNTIME_DIR=/run/user/$(id -u) $script_directory/run.sh >> $script_directory/logs/logs_cron.txt 2>&1"> $crontab_main
+echo "@reboot sleep 30;cd $script_directory;XDG_RUNTIME_DIR=/run/user/$(id -u) $script_directory/run.sh >> $script_directory/logs/logs_cron.txt 2>&1">> $crontab_main
 # Change the path for lazy_attend.py
-echo "*/5 * * * 1-6 cd $script_directory && $script_directory/lazy_attend.py >> $script_directory/logs/logs_cron.txt 2>&1"> $crontab_main
+echo "*/5 * * * 1-6 cd $script_directory && $script_directory/lazy_attend.py >> $script_directory/logs/logs_cron.txt 2>&1">> $crontab_main
 echo "Crontab.txt is ready to be copied by user"
 
 find "$script_directory" -type f -name "*.py" -exec chmod +x {} \;
