@@ -1,0 +1,2 @@
+Rename atau copy example_users.json menjadi users.json
+users.json dapat anda rubah sesuai keinginan pada bagian table users

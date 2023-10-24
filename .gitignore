@@ -1,6 +1,8 @@
 /__pycache__
 /coba coba
-/db
+/db/students_cache.json
+/db/post_periodic
+/db/users.json
 /venv
 /bin
 /images
