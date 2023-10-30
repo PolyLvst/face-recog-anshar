@@ -2,6 +2,7 @@
 from screeninfo import get_monitors
 from datetime import datetime
 from logwriter import write_some_log
+import ttkbootstrap as ttk
 import cv2
 
 current_date = datetime.now()
@@ -204,3 +205,59 @@ class Display:
             # If the image was not loaded successfully, print an error message
             print("Error: Unable to load the image.")
             logger.Log_write('Unable to load the image of checkmark / info','error')
+
+    def user_register(self):
+        # theme_list -> "darkly" "solar" "superhero" "cyborg" "vapor" "flatly" dan lebih lengkap ada di ttk bootstrap
+        window = ttk.Window(title="Form pendaftaran",themename="darkly")
+        w = 400 # width for the Tk window
+        h = 200 # height for the Tk window
+
+        # get screen width and height
+        ws = self.scr_width # width of the screen
+        hs = self.scr_height # height of the screen
+
+        # calculate x and y coordinates for the Tk root window
+        x = int((ws/2) - (w/2))
+        y = int(hs - h -50)
+
+        # print(ws,hs)
+        # print(x,y)
+        window.geometry(f'{w}x{h}+{x}+{y}')
+
+        header_label = ttk.Label(master=window,
+                                 text="SDIT Nurul Anshar"
+                                 ,font=("Calibri",18,"bold")
+                                 ,justify="center")
+
+        frame_id_field = ttk.Frame(master=window)
+        frame_name_field = ttk.Frame(master=window)
+        frame_button = ttk.Frame(master=window)
+
+        id_field = ttk.Entry(master=frame_id_field)
+        id_label = ttk.Label(master=frame_id_field,text="NIS")
+        name_field = ttk.Entry(master=frame_name_field)
+        name_label = ttk.Label(master=frame_name_field,text="Nama")
+
+        regis_button = ttk.Button(master=frame_button,text="Send")
+        take_photo = ttk.Button(master=frame_button,text="Ambil foto",bootstyle="success")
+
+        # Pack semua widget agar ditampilkan
+        header_label.pack(pady=17)
+
+        id_label.pack(side="left",padx=7)
+        id_field.pack(side="left",pady=5,padx=5)
+        frame_id_field.pack()
+
+        name_label.pack(side="left")
+        name_field.pack(side="left",pady=5,padx=5)
+        frame_name_field.pack()
+
+        take_photo.pack(side="left",padx=5)
+        regis_button.pack(side="left",padx=5)
+        frame_button.pack(pady=5)
+
+        window.mainloop()
+
+if __name__ == "__main__":
+    dp = Display()
+    dp.user_register()

@@ -203,6 +203,7 @@ def run_main():
         if key == ord('p') or key == ord('P'):
             logger.Log_write('Opening sign up')
             mode_nama = 'Ready'
+            display.user_register()
         if key == 27:  # Press 'Esc' key to exit
             logger.Log_write('esc key pressed ...')
             break
@@ -211,6 +212,12 @@ def run_main():
     video_capture.release()
     cv2.destroyAllWindows()
     logger.Log_write('--------- Exited ---------')
+    return 0
 
 if __name__ == '__main__':
-    run_main()
+    while True:
+        e = run_main()
+        if e == 0:
+            exit()
+        else:
+            print("Restarting app")
